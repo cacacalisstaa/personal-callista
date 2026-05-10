@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Callista Putri Relvian</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body class="no-scroll">
+
+  <div class="intro-overlay" id="introOverlay">
+    <div class="intro-card">
+      <p class="intro-tag">hello</p>
+      <h1 class="intro-title">Tentang Aku, Mimpi, dan Karya</h1>
+      <button id="startButton" class="btn-primary intro-start">Yuhuuu...</button>
+    </div>
+  </div>
+
+  <!-- NAVBAR --> 
+<nav class="navbar">
+  <div class="nav-inner">
+    <div class="nav-logo-icon">❀</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#cv">CV</a></li>
+    </ul>
+    <div class="nav-name">Callis</div>
+  </div>
+</nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero">
+    <div class="hero-left">
+      <span class="badge">● HALLOO !!</span>
+      <h1 class="hero-title">Callista Putri<br/>Relvian</h1>
+      <span class="badge badge-pink">● WEB DEVELOPER IN PROGRESS | SUKA DESAIN &amp; TEKNOLOGI</span>
+      <p class="hero-desc" id="typing-text"></p>
+      <div class="hero-socials">
+        <a href="https://www.instagram.com/callstptrlvn" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@caacaakss" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cacacalisstaa@gmail.com&su=Halo%20Callista" target="_blank" rel="noopener noreferrer" title="Kirim email ke Callista" class="social-icon"><i class="fas fa-envelope"></i></a>
+        <span class="socials-label">SOCIALS</span>
+      </div>
+      <a href="#about" class="btn-primary" id="viewDetailsBtn">View Details</a>
+    </div>
+    <div class="hero-right">
+      <div class="hero-img-wrapper">
+        <img src="image/photo.jpg" alt="Callista Putri Relvian" class="hero-img" onerror="this.style.background='#f5c6cb';this.removeAttribute('src')"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about-section page-section">
+    <h1 class="section-title">Tentang Saya</h1>
+    <div class="section-divider"></div>
+
+    <div class="about-grid">
+      <!-- LEFT COLUMN -->
+      <div class="about-left">
+
+        <div class="about-block">
+          <h2 class="about-sub">Riwayat Keluarga</h2>
+          <p class="about-text">
+            Saya merupakan anak tunggal dalam keluarga. Saya dibesarkan oleh kedua orang tua yang 
+            selalu memberikan dukungan penuh dalam pendidikan dan pengembangan diri saya. 
+            Sebagai anak tunggal, saya terbiasa untuk mandiri, bertanggung jawab, dan mampu mengelola 
+            berbagai hal secara sendiri dengan baik.
+          </p>
+           <span class="link-view-photo" onclick="openPhoto()">🖼 Lihat foto keluarga →</span>
+
+<div class="photo-modal" id="photoModal" onclick="closePhoto(event)">
+  <div class="photo-modal-inner">
+    <div class="polaroid-stack">
+      <div class="polaroid polaroid-back" onclick="openSingle('image/keluarga2.jpg', event)">
+        <img src="image/keluarga2.jpg" alt="Foto Keluarga 2" />
+      </div>
+      <div class="polaroid polaroid-front" onclick="openSingle('image/keluarga1.jpg', event)">
+        <img src="image/keluarga1.jpg" alt="Foto Keluarga 1" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SINGLE PHOTO VIEWER -->
+<div class="single-modal" id="singleModal" onclick="closeSingle()">
+  <img id="singleImg" src="" alt="Foto" />
+</div>
+</div>
+
+        <div class="about-block">
+  <h2 class="about-sub">Riwayat Pendidikan</h2>
+  <ul class="education-list">
+    <li class="edu-item" data-info="TK Permata 01" data-level="TAMAN KANAK-KANAK">
+      <div class="edu-dot"></div>
+      <div class="edu-content">
+        <span class="edu-year">2014–2015</span>
+        <div class="edu-detail">
+          <p class="edu-school">TK Permata 01</p>
+          <span class="edu-level">TAMAN KANAK-KANAK</span>
+        </div>
+      </div>
+    </li>
+    <li class="edu-item" data-info="Kemala Bhayangkari 04" data-level="SEKOLAH DASAR">
+      <div class="edu-dot"></div>
+      <div class="edu-content">
+        <span class="edu-year">2015–2021</span>
+        <div class="edu-detail">
+          <p class="edu-school">SD Kemala Bhayangkari 04</p>
+          <span class="edu-level">SEKOLAH DASAR</span>
+        </div>
+      </div>
+    </li>
+    <li class="edu-item" data-info="SMP Negeri 05 Semarang" data-level="SEKOLAH MENENGAH PERTAMA">
+      <div class="edu-dot"></div>
+      <div class="edu-content">
+        <span class="edu-year">2021–2024</span>
+        <div class="edu-detail">
+          <p class="edu-school">SMP Negeri 05 Semarang</p>
+          <span class="edu-level">SEKOLAH MENENGAH PERTAMA</span>
+        </div>
+      </div>
+    </li>
+    <li class="edu-item edu-active">
+      <div class="edu-dot edu-dot-active"></div>
+      <div class="edu-content">
+        <span class="edu-year">2024–2028</span>
+        <div class="edu-detail">
+          <p class="edu-school">SMK Negeri 7 Semarang</p>
+          <span class="edu-level">SEKOLAH MENENGAH KEJURUAN (SIJA)</span>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <button class="edu-view-all" id="eduViewAll">View All</button>
+</div>
+
+        <div class="about-block">
+          <h2 class="about-sub">Kelebihan Diri (Kekuatan)</h2>
+          <div class="skills-box-grid">
+            <div class="skills-box">
+              <p class="skills-box-title"><i class="fas fa-brain"></i> Soft Skills</p>
+              <ul>
+                <li>Komunikasi</li>
+                <li>Kerja Sama Tim</li>
+                <li>Manajemen Waktu</li>
+                <li>Kreativitas</li>
+                <li>Adaptabilitas</li>
+              </ul>
+            </div>
+            <div class="skills-box">
+              <p class="skills-box-title"><i class="fas fa-laptop-code"></i> Hard Skills</p>
+              <ul>
+                <li>HTML &amp; CSS</li>
+                <li>JavaScript Dasar</li>
+                <li>Desain Grafis (Canva)</li>
+                <li>UI/UX Design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="about-right">
+
+        <div class="about-block">
+          <h2 class="about-sub">Hobi</h2>
+          <div class="hobi-list">
+            <div class="hobi-item">
+              <i class="fas fa-utensils"></i>
+              <span>Memasak</span>
+            </div>
+            <div class="hobi-item">
+              <i class="fas fa-headphones"></i>
+              <span>Mendengarkan Musik</span>
+            </div>
+            <div class="hobi-item">
+              <i class="fas fa-gamepad"></i>
+              <span>Bermain Game</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-block">
+          <h2 class="about-sub">Minat &amp; Tujuan</h2>
+          <div class="minat-list">
+            <div class="minat-item">
+              <span class="minat-icon">&lt;/&gt;</span>
+              <div>
+                <p class="minat-title">Web Development</p>
+                <p class="minat-desc">Membangun/membuat digital yang berguna</p>
+              </div>
+            </div>
+            <div class="minat-item">
+              <span class="minat-icon">✦</span>
+              <div>
+                <p class="minat-title">UI/UX Design</p>
+                <p class="minat-desc">Merancang pengalaman pengguna yang intuistif</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tujuan-box">
+            <p class="tujuan-label">TUJUAN KARIR</p>
+            <p class="tujuan-quote">
+              "Menjadi web developer profesional yang mampu menciptakan website yang
+              fungsional dan menarik, serta memiliki usaha sendiri di bidang teknologi."
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="skills-section page-section">
+    <h1 class="section-title center">Kemampuan Teknis</h1>
+    <p class="section-subtitle center">SKILLS &amp; PROFICIENCY</p>
+
+    <div class="skills-layout">
+
+      <!-- LEFT: Progress Bars -->
+      <div class="skills-bars">
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-name">HTML</span>
+            <span class="skill-pct">60%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="60"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-name">CSS Layouts</span>
+            <span class="skill-pct">55%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="55"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-pct">40%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="40"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-name">Canva</span>
+            <span class="skill-pct">95%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="95"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+  <div class="skill-bar-header">
+    <span class="skill-name">Figma</span>
+    <span class="skill-pct">70%</span>
+  </div>
+  <div class="skill-track">
+    <div class="skill-fill" data-width="70"></div>
+  </div>
+</div>
+
+<div class="skill-bar-item">
+  <div class="skill-bar-header">
+    <span class="skill-name">Cisco</span>
+    <span class="skill-pct">35%</span>
+  </div>
+  <div class="skill-track">
+    <div class="skill-fill" data-width="35"></div>
+  </div>
+</div>
+</div>
+
+      <!-- RIGHT: Skill Cards -->
+      <div class="skill-cards-grid">
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fas fa-globe"></i></div>
+          <div>
+            <p class="skill-card-title">Web Fundamentals</p>
+            <p class="skill-card-desc">Membangun struktur web responsif dan fungsional menggunakan HTML, CSS, dan JavaScript.</p>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fas fa-pencil-ruler"></i></div>
+          <div>
+            <p class="skill-card-title">Visual Design</p>
+            <p class="skill-card-desc">Kreasi visual aesthetic &amp; UI/UX menggunakan Figma, Adobe Illustrator, dan Canva.</p>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fas fa-lightbulb"></i></div>
+          <div>
+            <p class="skill-card-title">Design Thinking</p>
+            <p class="skill-card-desc">Riset dan analisis kebutuhan pengguna untuk menciptakan solusi desain yang tepat sasaran.</p>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fas fa-users"></i></div>
+          <div>
+            <p class="skill-card-title">Team Workflow</p>
+            <p class="skill-card-desc">Kolaborasi tim yang efektif dengan manajemen proyek yang terorganisir dan komunikatif.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+<section id="portfolio" class="portfolio-section page-section">
+  <h1 class="section-title center">Portfolio</h1>
+
+  <!-- FILTER BUTTONS -->
+  <div class="portfolio-filter">
+    <button class="filter-btn active" data-filter="all">Semua</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+    <button class="filter-btn" data-filter="desain">Desain</button>
+  </div>
+
+  <div class="portfolio-grid">
+
+    <div class="portfolio-card" data-category="web">
+      <div class="portfolio-thumb">
+        <img src="image/web.jpg" alt="Website Statis Sederhana" />
+      </div>
+      <h3 class="portfolio-card-title">Website Statis Sederhana</h3>
+      <p class="portfolio-card-desc">"Website informatif yang menampilkan rekomendasi tempat nongkrong dan ngerjain tugas, lengkap dengan rating dan informasi detail setiap cafe atau tempat"</p>
+      <a href="https://hotspots.rf.gd/home.html" class="btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
+    </div>
+
+    <div class="portfolio-card" data-category="desain">
+      <div class="portfolio-thumb">
+        <img src="image/ui.jpg" alt="UI/UX Design Mobile App" />
+      </div>
+      <h3 class="portfolio-card-title">UI/UX Design Mobile App</h3>
+      <p class="portfolio-card-desc">"Desain aplikasi manajemen tugas dan jadwal yang dilengkapi fitur gamifikasi, selesaikan tugas untuk menumbuhkan ayam virtualmu hingga naik level!"</p>
+      <a href="https://drive.google.com/drive/folders/1APiWdYlypSXOSs2N2Pd9R1BX7q_ruxnr?usp=sharing" class="btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
+    </div>
+
+    <div class="portfolio-card" data-category="desain">
+      <div class="portfolio-thumb">
+        <img src="image/halaman1.jpg" alt="UI/UX Design Website" />
+      </div>
+      <h3 class="portfolio-card-title">UI/UX Design Website</h3>
+      <p class="portfolio-card-desc">"Desain website wedding bergaya soft elegant dengan nuansa pastel dan layout modern yang memberikan kesan romantis, hangat, dan intimate"</p>
+      <a href="https://drive.google.com/file/d/1boRqA43Dx0TQm5hFdKiKgsEaxmT_bWtR/view?usp=sharing" class="btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
+    </div>
+
+    <div class="portfolio-card" data-category="desain">
+      <div class="portfolio-thumb">
+        <img src="image/donutweb.jpg" alt="UI/UX Design Website" />
+      </div>
+      <h3 class="portfolio-card-title">UI/UX Design Website</h3>
+      <p class="portfolio-card-desc">"Desain website donat dengan tampilan clean dan modern menggunakan warna soft cream serta elemen 3D yang playful untuk memberikan kesan manis, menarik, dan interaktif"</p>
+      <a href="https://drive.google.com/file/d/1oDTSgL1tSEgcGO1iJJ6yLk-nqIBAcWkZ/view?usp=sharing" class="btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
+    </div>
+
+    <div class="portfolio-card" data-category="desain">
+      <div class="portfolio-thumb">
+        <img src="image/hotspots.jpg" alt="UI/UX Design Website" />
+      </div>
+      <h3 class="portfolio-card-title">UI/UX Design Website</h3>
+      <p class="portfolio-card-desc">"Desain website rekomendasi tempat nongkrong dan nugas di Semarang dengan tampilan modern dan aesthetic, dilengkapi kategori pilihan untuk membantu pengguna menemukan spot terbaik sesuai suasana dan kebutuhan"</p>
+      <a href="https://drive.google.com/file/d/1z6i_JJQpiywjuqP9wJPNKZ8ruQ8rI-o7/view?usp=sharing" class="btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
+    </div>
+  </div>
+</section>
+ 
+   
+
+  <!-- CV SECTION -->
+  <section id="cv" class="cv-section page-section">
+  <div class="cv-paper">
+
+    <!-- CV HEADER -->
+    <div class="cv-header-new">
+      <div class="cv-header-left-new">
+        <div class="cv-photo-wrapper">
+          <img src="image/cv.jpg" alt="Callista" />
+        </div>
+      </div>
+      <div class="cv-header-right-new">
+        <p class="cv-hello">Haii, Saya</p>
+        <h1 class="cv-name-new">Callista Putri Relvian</h1>
+        <span class="cv-role-badge">Web Developer in Progress</span>
+        <p class="cv-header-desc">Siswi SMK Negeri 7 Semarang jurusan SIJA yang tertarik pada dunia teknologi, khususnya web development dan UI/UX design.</p>
+        <div class="cv-contact-row">
+          <span><i class="fas fa-envelope"></i> cacacalisstaa@gmail.com</span>
+          <span><i class="fas fa-phone"></i> +6287728901055</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-body">
+      <!-- LEFT -->
+      <div class="cv-left">
+
+        <!-- PERSONAL INFO -->
+        <div class="cv-section-block">
+          <h2 class="cv-section-heading">PERSONAL INFO</h2>
+          <div class="cv-personal-list">
+            <div class="cv-personal-item">
+              <span class="cv-personal-label">Nama Lengkap</span>
+              <span class="cv-personal-value">Callista Putri Relvian</span>
+            </div>
+            <div class="cv-personal-item">
+              <span class="cv-personal-label">Tanggal Lahir</span>
+              <span class="cv-personal-value">20-08-2009</span>
+            </div>
+            <div class="cv-personal-item">
+              <span class="cv-personal-label">Alamat</span>
+              <span class="cv-personal-value">Jl. Kalilangse No.703 RT 01/RW  05,Gajahmungkur</span>
+            </div>
+            <div class="cv-personal-item">
+              <span class="cv-personal-label">Kota</span>
+              <span class="cv-personal-value">Semarang</span>
+            </div>
+            <div class="cv-personal-item">
+              <span class="cv-personal-label">Status</span>
+              <span class="cv-personal-value">Pelajar</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-section-block">
+          <h2 class="cv-section-heading">PENDIDIKAN</h2>
+          <div class="cv-edu-item">
+            <p class="cv-edu-name">SMK Negeri 7 Semarang</p>
+            <p class="cv-edu-detail">SIJA (Sistem Informatika, Jaringan dan Aplikasi)</p>
+            <p class="cv-edu-year">2024 – 2028</p>
+          </div>
+          <div class="cv-edu-item">
+            <p class="cv-edu-name">SMP Negeri 05 Semarang</p>
+            <p class="cv-edu-detail">Pendidikan Menengah Pertama</p>
+            <p class="cv-edu-year">2021 – 2024</p>
+          </div>
+          <div class="cv-edu-item">
+            <p class="cv-edu-name">Kemala Bhayangkari 04 (SD)</p>
+            <p class="cv-edu-detail">Pendidikan Dasar</p>
+            <p class="cv-edu-year">2015 – 2021</p>
+          </div>
+          <div class="cv-edu-item">
+            <p class="cv-edu-name">TK Permata 01</p>
+            <p class="cv-edu-detail">Pendidikan Anak Usia Dini</p>
+            <p class="cv-edu-year">2014 – 2015</p>
+          </div>
+        </div>
+
+        <div class="cv-section-block">
+          <h2 class="cv-section-heading">KEAHLIAN</h2>
+          <div class="cv-skill-icons">
+            <div class="cv-skill-icon-item">
+              <div class="cv-icon-box" style="background:#fce4ec;">
+                <i class="fab fa-html5" style="color:#e91e8c;"></i>
+              </div>
+              <span>HTML</span>
+            </div>
+            <div class="cv-skill-icon-item">
+              <div class="cv-icon-box" style="background:#f8bbd0;">
+                <i class="fab fa-css3-alt" style="color:#c2185b;"></i>
+              </div>
+              <span>CSS</span>
+            </div>
+            <div class="cv-skill-icon-item">
+              <div class="cv-icon-box" style="background:#fce4ec;">
+                <i class="fab fa-js" style="color:#e91e8c;"></i>
+              </div>
+              <span>JS</span>
+            </div>
+            <div class="cv-skill-icon-item">
+              <div class="cv-icon-box" style="background:#f8bbd0;">
+                <i class="fab fa-figma" style="color:#c2185b;"></i>
+              </div>
+              <span>Figma</span>
+            </div>
+            <div class="cv-skill-icon-item">
+              <div class="cv-icon-box" style="background:#fce4ec;">
+                <i class="fas fa-paint-brush" style="color:#e91e8c;"></i>
+              </div>
+              <span>Canva</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="cv-right">
+  <div class="cv-section-block">
+    <h2 class="cv-section-heading">PENGALAMAN & PROYEK</h2>
+
+    <div class="cv-proj-item">
+      <div class="cv-proj-dot"></div>
+      <div>
+        <p class="cv-proj-name">Lomba UI/UX Design WISE INNOVERA 2026</p>
+        <p class="cv-proj-role">Peserta — Mengikuti kompetisi UI/UX design tingkat nasional WISE INNOVERA 2026.</p>
+      </div>
+    </div>
+
+    <div class="cv-proj-item">
+      <div class="cv-proj-dot"></div>
+      <div>
+        <p class="cv-proj-name">Website Konversi Sederhana</p>
+        <p class="cv-proj-role">Lead Developer — Mengembangkan alat konversi berbasis web dengan interface responsif.</p>
+      </div>
+    </div>
+
+    <div class="cv-proj-item">
+      <div class="cv-proj-dot"></div>
+      <div>
+        <p class="cv-proj-name">UI/UX Design Mobile App</p>
+        <p class="cv-proj-role">Designer — Merancang interface aplikasi mobile dengan fokus pada user experience.</p>
+      </div>
+    </div>
+
+    <div class="cv-proj-item">
+      <div class="cv-proj-dot"></div>
+      <div>
+        <p class="cv-proj-name">UI/UX Design Website</p>
+        <p class="cv-proj-role">Designer — Merancang tampilan website yang modern, estetik, dan user-friendly dengan fokus pada pengalaman pengguna</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cv-section-block">
+    <h2 class="cv-section-heading">KONTAK</h2>
+    <div class="cv-contact-item">
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:cacacalisstaa@gmail.com">cacacalisstaa@gmail.com</a>
+    </div>
+    <div class="cv-contact-item">
+      <i class="fas fa-phone"></i>
+      <a href="tel:+6287728901055">+6287728901055</a>
+    </div>
+  </div>
+
+  <!-- QUOTES KERTAS NOTE -->
+  <div class="cv-note">
+    <div class="cv-note-pin"></div>
+    <p class="cv-note-text">"Aku masih belajar, masih bertumbuh, dan itu yang membuatku semakin kuat."</p>
+    <div class="cv-note-lines">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <h2 class="footer-title">Not just design,<br/><span>but experience.</span></h2>
+      <p class="footer-desc">Punya ide atau proyek seru? Yuk kolaborasi bareng! ✨</p>
+      <a href="https://wa.me/qr/U6XMQVC6MKXED1" target="_blank" class="footer-btn">Chat di WhatsApp 💬</a>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-right">
+      <p class="footer-social-label">Find me on</p>
+      <div class="footer-socials">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cacacalisstaa@gmail.com&su=Halo%20Callista" target="_blank" class="footer-social-item" title="Email">
+  <i class="fas fa-envelope"></i>
+  <span>Email</span>
+</a>
+        <a href="https://www.instagram.com/callstptrlvn?igsh=b3I4amxqbzEzMWM=" target="_blank" class="footer-social-item" title="Instagram">
+          <i class="fab fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+        <a href="https://www.tiktok.com/@caacaakss?_r=1&_t=ZS-966hUdBjFcz" target="_blank" class="footer-social-item" title="TikTok">
+          <i class="fab fa-tiktok"></i>
+          <span>TikTok</span>
+        </a>
+        <a href="https://github.com/cacacalisstaa" target="_blank" class="footer-social-item" title="GitHub">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>❀ Made with love by <strong>Callista Putri Relvian</strong></p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
