@@ -115,8 +115,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Kunci scroll sampai klik View Details
-  document.body.classList.add('no-scroll');
+  // Kunci scroll sampai klik View Details (hanya di desktop)
+  if (window.innerWidth > 900) {
+    document.body.classList.add('no-scroll');
+  }
 
   const viewDetailsBtn = document.getElementById('viewDetailsBtn');
   if (viewDetailsBtn) {
