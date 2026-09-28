@@ -261,3 +261,12 @@ function openSingle(src, e) {
 function closeSingle() {
   document.getElementById('singleModal').classList.remove('active');
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const printCvBtn = document.getElementById('printCvBtn');
+  if (printCvBtn) {
+    printCvBtn.addEventListener('click', () => {
+      window.print();
+    });
+  }
+});
