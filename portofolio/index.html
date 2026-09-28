@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Callista Putri Relvian</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body class="no-scroll">
 
+  <!-- INTRO OVERLAY -->
   <div class="intro-overlay" id="introOverlay">
     <div class="intro-card">
       <p class="intro-tag">hello</p>
@@ -18,20 +19,20 @@
     </div>
   </div>
 
-  <!-- NAVBAR --> 
-<nav class="navbar">
-  <div class="nav-inner">
-    <div class="nav-logo-icon">❀</div>
-    <ul class="nav-links">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#cv">CV</a></li>
-    </ul>
-    <div class="nav-name">Callis</div>
-  </div>
-</nav>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo-icon">❀</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#cv">CV</a></li>
+      </ul>
+      <div class="nav-name">Callis</div>
+    </div>
+  </nav>
 
   <!-- HERO SECTION -->
   <section id="hero" class="hero">
@@ -69,73 +70,73 @@
           <p class="about-text">
             I am the only child in my family. I was raised by both of my parents, who have always given me full support in my education and personal development. As an only child, I have learned to be independent, responsible, and capable of managing things on my own.
           </p>
-           <span class="link-view-photo" onclick="openPhoto()">🖼 View family photos →</span>
+          <span class="link-view-photo" onclick="openPhoto()">🖼 View family photos →</span>
 
-<div class="photo-modal" id="photoModal" onclick="closePhoto(event)">
-  <div class="photo-modal-inner">
-    <div class="polaroid-stack">
-      <div class="polaroid polaroid-back" onclick="openSingle('image/keluarga2.jpg', event)">
-        <img src="image/keluarga2.jpg" alt="Family Photo 2" />
-      </div>
-      <div class="polaroid polaroid-front" onclick="openSingle('image/keluarga1.jpg', event)">
-        <img src="image/keluarga1.jpg" alt="Family Photo 1" />
-      </div>
-    </div>
-  </div>
-</div>
+          <div class="photo-modal" id="photoModal" onclick="closePhoto(event)">
+            <div class="photo-modal-inner">
+              <div class="polaroid-stack">
+                <div class="polaroid polaroid-back" onclick="openSingle('image/keluarga2.jpg', event)">
+                  <img src="image/keluarga2.jpg" alt="Family Photo 2" />
+                </div>
+                <div class="polaroid polaroid-front" onclick="openSingle('image/keluarga1.jpg', event)">
+                  <img src="image/keluarga1.jpg" alt="Family Photo 1" />
+                </div>
+              </div>
+            </div>
+          </div>
 
-<!-- SINGLE PHOTO VIEWER -->
-<div class="single-modal" id="singleModal" onclick="closeSingle()">
-  <img id="singleImg" src="" alt="Photo" />
-</div>
-</div>
+          <!-- SINGLE PHOTO VIEWER -->
+          <div class="single-modal" id="singleModal" onclick="closeSingle()">
+            <img id="singleImg" src="" alt="Photo" />
+          </div>
+        </div>
 
         <div class="about-block">
-  <h2 class="about-sub">Education History</h2>
-  <ul class="education-list">
-    <li class="edu-item" data-info="TK Permata 01" data-level="KINDERGARTEN">
-      <div class="edu-dot"></div>
-      <div class="edu-content">
-        <span class="edu-year">2014–2015</span>
-        <div class="edu-detail">
-          <p class="edu-school">TK Permata 01</p>
-          <span class="edu-level">KINDERGARTEN</span>
+          <h2 class="about-sub">Education History</h2>
+          <ul class="education-list">
+            <li class="edu-item" data-info="TK Permata 01" data-level="KINDERGARTEN">
+              <div class="edu-dot"></div>
+              <div class="edu-content">
+                <span class="edu-year">2014–2015</span>
+                <div class="edu-detail">
+                  <p class="edu-school">TK Permata 01</p>
+                  <span class="edu-level">KINDERGARTEN</span>
+                </div>
+              </div>
+            </li>
+            <li class="edu-item" data-info="Kemala Bhayangkari 04" data-level="ELEMENTARY SCHOOL">
+              <div class="edu-dot"></div>
+              <div class="edu-content">
+                <span class="edu-year">2015–2021</span>
+                <div class="edu-detail">
+                  <p class="edu-school">SD Kemala Bhayangkari 04</p>
+                  <span class="edu-level">ELEMENTARY SCHOOL</span>
+                </div>
+              </div>
+            </li>
+            <li class="edu-item" data-info="SMP Negeri 05 Semarang" data-level="JUNIOR HIGH SCHOOL">
+              <div class="edu-dot"></div>
+              <div class="edu-content">
+                <span class="edu-year">2021–2024</span>
+                <div class="edu-detail">
+                  <p class="edu-school">SMP Negeri 05 Semarang</p>
+                  <span class="edu-level">JUNIOR HIGH SCHOOL</span>
+                </div>
+              </div>
+            </li>
+            <li class="edu-item edu-active">
+              <div class="edu-dot edu-dot-active"></div>
+              <div class="edu-content">
+                <span class="edu-year">2024–2028</span>
+                <div class="edu-detail">
+                  <p class="edu-school">SMK Negeri 7 Semarang</p>
+                  <span class="edu-level">VOCATIONAL HIGH SCHOOL (SIJA)</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button class="edu-view-all" id="eduViewAll">View All</button>
         </div>
-      </div>
-    </li>
-    <li class="edu-item" data-info="Kemala Bhayangkari 04" data-level="ELEMENTARY SCHOOL">
-      <div class="edu-dot"></div>
-      <div class="edu-content">
-        <span class="edu-year">2015–2021</span>
-        <div class="edu-detail">
-          <p class="edu-school">SD Kemala Bhayangkari 04</p>
-          <span class="edu-level">ELEMENTARY SCHOOL</span>
-        </div>
-      </div>
-    </li>
-    <li class="edu-item" data-info="SMP Negeri 05 Semarang" data-level="JUNIOR HIGH SCHOOL">
-      <div class="edu-dot"></div>
-      <div class="edu-content">
-        <span class="edu-year">2021–2024</span>
-        <div class="edu-detail">
-          <p class="edu-school">SMP Negeri 05 Semarang</p>
-          <span class="edu-level">JUNIOR HIGH SCHOOL</span>
-        </div>
-      </div>
-    </li>
-    <li class="edu-item edu-active">
-      <div class="edu-dot edu-dot-active"></div>
-      <div class="edu-content">
-        <span class="edu-year">2024–2028</span>
-        <div class="edu-detail">
-          <p class="edu-school">SMK Negeri 7 Semarang</p>
-          <span class="edu-level">VOCATIONAL HIGH SCHOOL (SIJA)</span>
-        </div>
-      </div>
-    </li>
-  </ul>
-  <button class="edu-view-all" id="eduViewAll">View All</button>
-</div>
 
         <div class="about-block">
           <h2 class="about-sub">Strengths</h2>
@@ -262,25 +263,24 @@
           </div>
         </div>
         <div class="skill-bar-item">
-  <div class="skill-bar-header">
-    <span class="skill-name">Figma</span>
-    <span class="skill-pct">70%</span>
-  </div>
-  <div class="skill-track">
-    <div class="skill-fill" data-width="70"></div>
-  </div>
-</div>
-
-<div class="skill-bar-item">
-  <div class="skill-bar-header">
-    <span class="skill-name">Cisco</span>
-    <span class="skill-pct">35%</span>
-  </div>
-  <div class="skill-track">
-    <div class="skill-fill" data-width="35"></div>
-  </div>
-</div>
-</div>
+          <div class="skill-bar-header">
+            <span class="skill-name">Figma</span>
+            <span class="skill-pct">70%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="70"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-name">Cisco</span>
+            <span class="skill-pct">35%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="35"></div>
+          </div>
+        </div>
+      </div>
 
       <!-- RIGHT: Skill Cards -->
       <div class="skill-cards-grid">
@@ -318,355 +318,345 @@
   </section>
 
   <!-- PORTFOLIO SECTION -->
-<section id="portfolio" class="portfolio-section page-section">
-  <h1 class="section-title center">Portfolio</h1>
+  <section id="portfolio" class="portfolio-section page-section">
+    <h1 class="section-title center">Portfolio</h1>
 
-  <!-- FILTER BUTTONS -->
-  <div class="portfolio-filter">
-    <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="Website">Website</button>
-    <button class="filter-btn" data-filter="Design">Design</button>
-    <button class="filter-btn" data-filter="Cisco">Cisco</button>
-    <button class="filter-btn" data-filter="Certificate">Certificate</button>
-  </div>
-
-  <div class="portfolio-grid">
-
-    <div class="portfolio-card" data-category="Website">
-      <div class="portfolio-thumb">
-        <img src="image/web.jpg" alt="Simple Static Website" />
-      </div>
-      <h3 class="portfolio-card-title">Simple Static Website</h3>
-      <p class="portfolio-card-desc">"An informative website featuring recommendations for hangout and study spots, complete with ratings and detailed information about each cafe or place."</p>
-      <a href="https://hotspots.rf.gd/home.html" class="btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
+    <!-- FILTER BUTTONS -->
+    <div class="portfolio-filter">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Website">Website</button>
+      <button class="filter-btn" data-filter="Design">Design</button>
+      <button class="filter-btn" data-filter="Cisco">Cisco</button>
+      <button class="filter-btn" data-filter="Certificate">Certificate</button>
     </div>
 
-    <div class="portfolio-card" data-category="Design">
-      <div class="portfolio-thumb">
-        <img src="image/ui.jpg" alt="UI/UX Design Mobile App" />
+    <div class="portfolio-grid">
+
+      <div class="portfolio-card" data-category="Website">
+        <div class="portfolio-thumb">
+          <img src="image/web.jpg" alt="Simple Static Website" />
+        </div>
+        <h3 class="portfolio-card-title">Simple Static Website</h3>
+        <p class="portfolio-card-desc">"An informative website featuring recommendations for hangout and study spots, complete with ratings and detailed information about each cafe or place."</p>
+        <a href="https://hotspots.rf.gd/home.html" class="btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
       </div>
-      <h3 class="portfolio-card-title">UI/UX Design Mobile App</h3>
-      <p class="portfolio-card-desc">"An app design for managing tasks and schedules with gamification features. Complete tasks to grow your virtual chicken and level it up!"</p>
-      <a href="https://drive.google.com/drive/folders/1APiWdYlypSXOSs2N2Pd9R1BX7q_ruxnr?usp=sharing" class="btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
+      <div class="portfolio-card" data-category="Website">
+        <div class="portfolio-thumb">
+          <img src="image/mtk.jpg" alt="Math Composition Functions Website" />
+        </div>
+        <h3 class="portfolio-card-title">Math Composition Functions Website</h3>
+        <p class="portfolio-card-desc">"An educational website that explains the concept of composite functions in mathematics through clear explanations, formulas, examples, and step-by-step solutions."</p>
+        <a href="https://website-fungsi-komposisi.vercel.app/" class="btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+
+      <div class="portfolio-card" data-category="Design">
+        <div class="portfolio-thumb">
+          <img src="image/ui.jpg" alt="UI/UX Design Mobile App" />
+        </div>
+        <h3 class="portfolio-card-title">UI/UX Design Mobile App</h3>
+        <p class="portfolio-card-desc">"An app design for managing tasks and schedules with gamification features. Complete tasks to grow your virtual chicken and level it up!"</p>
+        <a href="https://drive.google.com/drive/folders/1APiWdYlypSXOSs2N2Pd9R1BX7q_ruxnr?usp=sharing" class="btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+
+      <div class="portfolio-card" data-category="Design">
+        <div class="portfolio-thumb">
+          <img src="image/halaman1.jpg" alt="UI/UX Design Website" />
+        </div>
+        <h3 class="portfolio-card-title">UI/UX Design Website</h3>
+        <p class="portfolio-card-desc">"A soft and elegant wedding website design with pastel tones and a modern layout that creates a romantic, warm, and intimate atmosphere."</p>
+        <a href="https://drive.google.com/file/d/1boRqA43Dx0TQm5hFdKiKgsEaxmT_bWtR/view?usp=sharing" class="btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+
+      <div class="portfolio-card" data-category="Design">
+        <div class="portfolio-thumb">
+          <img src="image/donutweb.jpg" alt="UI/UX Design Website" />
+        </div>
+        <h3 class="portfolio-card-title">UI/UX Design Website</h3>
+        <p class="portfolio-card-desc">"A clean and modern donut website design using soft cream colors and playful 3D elements to create a sweet, attractive, and interactive look."</p>
+        <a href="https://drive.google.com/file/d/1oDTSgL1tSEgcGO1iJJ6yLk-nqIBAcWkZ/view?usp=sharing" class="btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+
+      <div class="portfolio-card" data-category="Design">
+        <div class="portfolio-thumb">
+          <img src="image/hotspots.jpg" alt="UI/UX Design Website" />
+        </div>
+        <h3 class="portfolio-card-title">UI/UX Design Website</h3>
+        <p class="portfolio-card-desc">"A modern and aesthetic website design recommending hangout and study spots in Semarang, with selected categories to help users find the right place based on their mood and needs."</p>
+        <a href="https://drive.google.com/file/d/1z6i_JJQpiywjuqP9wJPNKZ8ruQ8rI-o7/view?usp=sharing" class="btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+
+      <div class="portfolio-card" data-category="Cisco">
+        <div class="portfolio-thumb">
+          <img src="image/cisco.jpg" alt="Cisco Packet Tracer" />
+        </div>
+        <h3 class="portfolio-card-title">Cisco Packet Tracer</h3>
+        <p class="portfolio-card-desc">"A computer network simulation using Cisco Packet Tracer to understand networking concepts and troubleshooting."</p>
+        <a href="https://drive.google.com/drive/folders/1qxA050r8bOkdziU-RFj8P_aYsQWqQjZA?usp=sharing" class="btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+
+      <div class="portfolio-card" data-category="Certificate">
+        <div class="portfolio-thumb">
+          <img src="image/uiux.jpg" alt="Certificate of Participation in the UI/UX competition" />
+        </div>
+        <h3 class="portfolio-card-title">Certificate of Participation in the competition UI/UX</h3>
+        <p class="portfolio-card-desc">Participated in a UI/UX design competition by creating a website concept that focuses on user experience, visual design, and creative digital solutions.</p>
+        <a href="https://drive.google.com/file/d/1IK4HwrnyKJT_C2LD9x4io8p8R3wPNJ2C/view?usp=sharing" class="btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+
+      <div class="portfolio-card" data-category="Certificate">
+        <div class="portfolio-thumb">
+          <img src="image/oracle.jpg" alt="Oracle Java Fundamentals Certificate" />
+        </div>
+        <h3 class="portfolio-card-title">Oracle Java Fundamentals Certificate</h3>
+        <p class="portfolio-card-desc">Completed the Java Fundamentals program and learned the basic concepts of Java programming, including variables, data types, operators, conditional statements, loops, and basic object-oriented programming.</p>
+        <a href="https://drive.google.com/file/d/17laEBBA-vJf7L7DIEwHNqrul23wo57jU/view?usp=sharing" class="btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ CV SECTION ============ -->
+  <section id="cv" class="rc-section">
+
+    <div class="rc-toolbar">
+      <button class="rc-print-btn" id="printCvBtn" type="button">
+        <i class="fas fa-print"></i> Print CV
+      </button>
     </div>
 
-    <div class="portfolio-card" data-category="Design">
-      <div class="portfolio-thumb">
-        <img src="image/halaman1.jpg" alt="UI/UX Design Website" />
+    <article class="rc-paper">
+      <span class="rc-ring rc-ring-top" aria-hidden="true"></span>
+      <span class="rc-ring rc-ring-bottom" aria-hidden="true"></span>
+
+      <!-- HEADER -->
+      <header class="rc-header">
+        <div class="rc-photo">
+          <img src="image/cv.jpg" alt="Callista Putri Relvian" />
+        </div>
+        <div class="rc-header-text">
+          <h1 class="rc-name">Callista Putri Relvian</h1>
+          <p class="rc-role">Student at SMK Negeri 7 Semarang | Web Developer Enthusiast</p>
+          <p class="rc-summary">
+            I am a vocational high school student at SMK Negeri 7 Semarang, majoring in Information Systems,
+            Networking, and Applications (SIJA). I am passionate about web development and UI/UX design and
+            eager to improve my skills through real-world projects.
+          </p>
+        </div>
+      </header>
+
+      <div class="rc-body">
+
+        <!-- ============ LEFT COLUMN ============ -->
+        <aside class="rc-col rc-left">
+
+          <section class="rc-block">
+            <h2 class="rc-heading"><i class="fas fa-user"></i> Personal Information</h2>
+            <dl class="rc-info">
+              <div><dt>Full Name</dt><dd>Callista Putri Relvian</dd></div>
+              <div><dt>Date of Birth</dt><dd>20-08-2009</dd></div>
+              <div><dt>Gender</dt><dd>Female</dd></div>
+              <div><dt>Address</dt><dd>Jl. Kalilangse No. 703, RT 01/RW 05, Gajahmungkur</dd></div>
+              <div><dt>City</dt><dd>Semarang</dd></div>
+              <div><dt>Status</dt><dd>Student</dd></div>
+            </dl>
+          </section>
+
+          <section class="rc-block">
+            <h2 class="rc-heading"><i class="fas fa-graduation-cap"></i> Education</h2>
+            <ul class="rc-timeline">
+              <li class="is-current">
+                <p class="rc-item-title">SMK Negeri 7 Semarang</p>
+                <p class="rc-item-sub">SIJA (Information Systems, Networking, and Applications)</p>
+                <span class="rc-year">2024 – 2028</span>
+              </li>
+              <li>
+                <p class="rc-item-title">SMP Negeri 05 Semarang</p>
+                <p class="rc-item-sub">Junior High School</p>
+                <span class="rc-year">2021 – 2024</span>
+              </li>
+              <li>
+                <p class="rc-item-title">SD Kemala Bhayangkari 04</p>
+                <p class="rc-item-sub">Primary Education</p>
+                <span class="rc-year">2015 – 2021</span>
+              </li>
+              <li>
+                <p class="rc-item-title">TK Permata 01</p>
+                <p class="rc-item-sub">Early Childhood Education</p>
+                <span class="rc-year">2014 – 2015</span>
+              </li>
+            </ul>
+          </section>
+
+          <section class="rc-block">
+            <h2 class="rc-heading"><i class="fas fa-award"></i> Certifications</h2>
+            <ul class="rc-timeline rc-timeline-small">
+              <li>
+                <p class="rc-item-title">National UI/UX Design Competition — WISE INNOVERA 2026</p>
+                <p class="rc-item-sub">Participant · 2026</p>
+              </li>
+              <li>
+                <p class="rc-item-title">Cisco Networking Academy</p>
+                <p class="rc-item-sub">Certificate of Participation · 2025</p>
+              </li>
+              <li>
+                <p class="rc-item-title">National UI/UX Design Seminar</p>
+                <p class="rc-item-sub">Participant · 2026</p>
+              </li>
+              <li>
+                <p class="rc-item-title">HAMD Public Speaking Webinar</p>
+                <p class="rc-item-sub">Certificate of Participation · 2025</p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="rc-block">
+            <h2 class="rc-heading"><i class="fas fa-language"></i> Languages</h2>
+            <ul class="rc-lang">
+              <li><span>Indonesian</span><em>Native</em></li>
+              <li><span>English</span><em>Basic</em></li>
+              <li><span>Japanese</span><em>Beginner</em></li>
+              <li><span>German</span><em>Beginner</em></li>
+            </ul>
+          </section>
+
+        </aside>
+
+        <!-- ============ RIGHT COLUMN ============ -->
+        <main class="rc-col rc-right">
+
+          <section class="rc-block">
+            <h2 class="rc-heading"><i class="fas fa-laptop-code"></i> Hard Skills</h2>
+            <div class="rc-bars">
+              <div class="rc-bar">
+                <div class="rc-bar-head"><span><i class="fab fa-html5"></i> HTML</span><b>60%</b></div>
+                <div class="rc-track"><div class="rc-fill" style="--w:60%"></div></div>
+              </div>
+              <div class="rc-bar">
+                <div class="rc-bar-head"><span><i class="fab fa-css3-alt"></i> CSS Layouts</span><b>55%</b></div>
+                <div class="rc-track"><div class="rc-fill" style="--w:55%"></div></div>
+              </div>
+              <div class="rc-bar">
+                <div class="rc-bar-head"><span><i class="fab fa-js"></i> JavaScript</span><b>40%</b></div>
+                <div class="rc-track"><div class="rc-fill" style="--w:40%"></div></div>
+              </div>
+              <div class="rc-bar">
+                <div class="rc-bar-head"><span><i class="fas fa-palette"></i> Canva</span><b>95%</b></div>
+                <div class="rc-track"><div class="rc-fill" style="--w:95%"></div></div>
+              </div>
+              <div class="rc-bar">
+                <div class="rc-bar-head"><span><i class="fab fa-figma"></i> Figma</span><b>70%</b></div>
+                <div class="rc-track"><div class="rc-fill" style="--w:70%"></div></div>
+              </div>
+              <div class="rc-bar">
+                <div class="rc-bar-head"><span><i class="fas fa-network-wired"></i> Cisco</span><b>35%</b></div>
+                <div class="rc-track"><div class="rc-fill" style="--w:35%"></div></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="rc-block">
+            <h2 class="rc-heading"><i class="fas fa-heart"></i> Soft Skills</h2>
+            <ul class="rc-chips">
+              <li><i class="fas fa-comments"></i> Communication</li>
+              <li><i class="fas fa-users"></i> Teamwork</li>
+              <li><i class="fas fa-clock"></i> Time Management</li>
+              <li><i class="fas fa-lightbulb"></i> Creativity</li>
+              <li><i class="fas fa-arrows-rotate"></i> Adaptability</li>
+            </ul>
+          </section>
+
+          <section class="rc-block">
+            <h2 class="rc-heading"><i class="fas fa-briefcase"></i> Projects &amp; Experience</h2>
+            <ul class="rc-timeline">
+              <li>
+                <p class="rc-item-title">WISE INNOVERA 2026 UI/UX Design Competition</p>
+                <p class="rc-item-sub">Participant</p>
+                <span class="rc-year">2026</span>
+              </li>
+              <li>
+                <p class="rc-item-title">HotSpots Website</p>
+                <p class="rc-item-sub">Front-End Developer</p>
+                <span class="rc-year">2026</span>
+              </li>
+              <li>
+                <p class="rc-item-title">UI/UX Design Mobile App</p>
+                <p class="rc-item-sub">Designer</p>
+                <span class="rc-year">2025</span>
+              </li>
+              <li>
+                <p class="rc-item-title">UI/UX Design Website</p>
+                <p class="rc-item-sub">Designer</p>
+                <span class="rc-year">2025</span>
+              </li>
+              <li>
+                <p class="rc-item-title">UI/UX Design Website Smart Farming</p>
+                <p class="rc-item-sub">Designer</p>
+                <span class="rc-year">2025</span>
+              </li>
+              <li>
+                <p class="rc-item-title">Fungsi Komposisi Website</p>
+                <p class="rc-item-sub">Front-End Developer</p>
+                <span class="rc-year">2025</span>
+              </li>
+            </ul>
+          </section>
+
+          <section class="rc-block">
+            <h2 class="rc-heading"><i class="fas fa-address-book"></i> Contact</h2>
+            <ul class="rc-contact">
+              <li><i class="fas fa-envelope"></i> <a href="mailto:cacacalisstaa@gmail.com">cacacalisstaa@gmail.com</a></li>
+              <li><i class="fas fa-phone"></i> <a href="tel:+6287728901055">+62 877-2890-1055</a></li>
+            </ul>
+          </section>
+
+        </main>
       </div>
-      <h3 class="portfolio-card-title">UI/UX Design Website</h3>
-      <p class="portfolio-card-desc">"A soft and elegant wedding website design with pastel tones and a modern layout that creates a romantic, warm, and intimate atmosphere."</p>
-      <a href="https://drive.google.com/file/d/1boRqA43Dx0TQm5hFdKiKgsEaxmT_bWtR/view?usp=sharing" class="btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
-    </div>
 
-    <div class="portfolio-card" data-category="Design">
-      <div class="portfolio-thumb">
-        <img src="image/donutweb.jpg" alt="UI/UX Design Website" />
+      <footer class="rc-quote">
+        <i class="fas fa-seedling"></i>
+        <p>"Always learning, always growing"</p>
+      </footer>
+    </article>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <h2 class="footer-title">Not just design,<br/><span>but experience.</span></h2>
+        <p class="footer-desc">Have an idea or an exciting project? Let’s collaborate! ✨</p>
+        <a href="https://wa.me/qr/U6XMQVC6MKXED1" target="_blank" class="footer-btn">Chat on WhatsApp 💬</a>
       </div>
-      <h3 class="portfolio-card-title">UI/UX Design Website</h3>
-      <p class="portfolio-card-desc">"A clean and modern donut website design using soft cream colors and playful 3D elements to create a sweet, attractive, and interactive look."</p>
-      <a href="https://drive.google.com/file/d/1oDTSgL1tSEgcGO1iJJ6yLk-nqIBAcWkZ/view?usp=sharing" class="btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
-    </div>
 
-    <div class="portfolio-card" data-category="Design">
-      <div class="portfolio-thumb">
-        <img src="image/hotspots.jpg" alt="UI/UX Design Website" />
-      </div>
-      <h3 class="portfolio-card-title">UI/UX Design Website</h3>
-      <p class="portfolio-card-desc">"A modern and aesthetic website design recommending hangout and study spots in Semarang, with selected categories to help users find the right place based on their mood and needs."</p>
-      <a href="https://drive.google.com/file/d/1z6i_JJQpiywjuqP9wJPNKZ8ruQ8rI-o7/view?usp=sharing" class="btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
-    </div>
+      <div class="footer-divider"></div>
 
-    <div class="portfolio-card" data-category="Cisco">
-  <div class="portfolio-thumb">
-    <img src="image/cisco.jpg" alt="Cisco Packet Tracer" />
-  </div>
-  <h3 class="portfolio-card-title">Cisco Packet Tracer</h3>
-  <p class="portfolio-card-desc">"A computer network simulation using Cisco Packet Tracer to understand networking concepts and troubleshooting."</p>
-  <a href="https://drive.google.com/drive/folders/1qxA050r8bOkdziU-RFj8P_aYsQWqQjZA?usp=sharing" class="btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
-</div>
-  </div>
-</section>
- 
-   
-
-  <!-- CV SECTION -->
-  <section id="cv" class="cv-section page-section">
-  <div class="cv-paper">
-    <button class="btn-primary print-cv-btn" id="printCvBtn" type="button">Print CV</button>
-
-    <!-- CV HEADER -->
-    <div class="cv-header-new">
-      <div class="cv-header-left-new">
-        <div class="cv-photo-wrapper">
-          <img src="image/cv.jpg" alt="Callista" />
+      <div class="footer-right">
+        <p class="footer-social-label">Find me on</p>
+        <div class="footer-socials">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cacacalisstaa@gmail.com&su=Halo%20Callista" target="_blank" class="footer-social-item" title="Email">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+          </a>
+          <a href="https://www.instagram.com/callstptrlvn?igsh=b3I4amxqbzEzMWM=" target="_blank" class="footer-social-item" title="Instagram">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="https://www.tiktok.com/@caacaakss?_r=1&_t=ZS-966hUdBjFcz" target="_blank" class="footer-social-item" title="TikTok">
+            <i class="fab fa-tiktok"></i>
+            <span>TikTok</span>
+          </a>
+          <a href="https://github.com/cacacalisstaa" target="_blank" class="footer-social-item" title="GitHub">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
         </div>
       </div>
-      <div class="cv-header-right-new">
-        <p class="cv-hello">Hello, I'm</p>
-        <h1 class="cv-name-new">Callista Putri Relvian</h1>
-        <span class="cv-role-badge">Student | Web Developer Enthusiast</span>
-        <p class="cv-header-desc">A vocational high school student at SMK Negeri 7 Semarang majoring in Information Systems, Networking, and Applications (SIJA). Passionate about web development and UI/UX design and eager to improve my skills through real-world projects.</p>
-        <div class="cv-contact-row">
-          <span><i class="fas fa-envelope"></i> cacacalisstaa@gmail.com</span>
-          <span><i class="fas fa-phone"></i> +6287728901055</span>
-        </div>
-      </div>
     </div>
 
-    <div class="cv-body">
-      <!-- LEFT -->
-      <div class="cv-left">
-
-        <!-- PERSONAL INFO -->
-        <div class="cv-section-block">
-          <h2 class="cv-section-heading">PERSONAL INFO</h2>
-          <div class="cv-personal-list">
-            <div class="cv-personal-item">
-              <span class="cv-personal-label">Full Name</span>
-              <span class="cv-personal-value">Callista Putri Relvian</span>
-            </div>
-            <div class="cv-personal-item">
-              <span class="cv-personal-label">Date of Birth</span>
-              <span class="cv-personal-value">20-08-2009</span>
-            </div>
-            <div class="cv-personal-item">
-              <span class="cv-personal-label">Address</span>
-              <span class="cv-personal-value">Jl. Kalilangse No.703 RT 01/RW 05, Gajahmungkur</span>
-            </div>
-            <div class="cv-personal-item">
-              <span class="cv-personal-label">City</span>
-              <span class="cv-personal-value">Semarang</span>
-            </div>
-            <div class="cv-personal-item">
-              <span class="cv-personal-label">Status</span>
-              <span class="cv-personal-value">Student</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="cv-section-block">
-          <h2 class="cv-section-heading">EDUCATION</h2>
-          <div class="cv-edu-item">
-            <p class="cv-edu-name">SMK Negeri 7 Semarang</p>
-            <p class="cv-edu-detail">SIJA (Information Systems, Networking, and Applications)</p>
-            <p class="cv-edu-year">2024 – 2028</p>
-          </div>
-          <div class="cv-edu-item">
-            <p class="cv-edu-name">SMP Negeri 05 Semarang</p>
-            <p class="cv-edu-detail">Junior High School</p>
-            <p class="cv-edu-year">2021 – 2024</p>
-          </div>
-          <div class="cv-edu-item">
-            <p class="cv-edu-name">Kemala Bhayangkari 04 (Elementary School)</p>
-            <p class="cv-edu-detail">Primary Education</p>
-            <p class="cv-edu-year">2015 – 2021</p>
-          </div>
-          <div class="cv-edu-item">
-            <p class="cv-edu-name">TK Permata 01</p>
-            <p class="cv-edu-detail">Early Childhood Education</p>
-            <p class="cv-edu-year">2014 – 2015</p>
-          </div>
-        </div>
-
-        <div class="cv-section-block">
-          <h2 class="cv-section-heading">CERTIFICATIONS</h2>
-          <div class="cv-personal-list">
-            <div class="cv-personal-item">
-              <span class="cv-personal-label">2026</span>
-              <span class="cv-personal-value">National UI/UX Design Competition — WISE INNOVERA 2026 (Participant)</span>
-            </div>
-            <div class="cv-personal-item">
-              <span class="cv-personal-label">2025</span>
-              <span class="cv-personal-value">Cisco Networking Academy — Certificate of Participation</span>
-            </div>
-            <div class="cv-personal-item">
-              <span class="cv-personal-label">2026</span>
-              <span class="cv-personal-value">National UI/UX Design Seminar — Participant</span>
-            </div>
-            <div class="cv-personal-item">
-              <span class="cv-personal-label">2025</span>
-              <span class="cv-personal-value">HAMD Public Speaking Webinar — Certificate of Participation</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="cv-section-block">
-          <h2 class="cv-section-heading">LANGUAGES</h2>
-          <div class="cv-personal-list">
-            <div class="cv-personal-item">
-              <span class="cv-personal-label">Indonesian</span>
-              <span class="cv-personal-value">Native</span>
-            </div>
-            <div class="cv-personal-item">
-              <span class="cv-personal-label">English</span>
-              <span class="cv-personal-value">Basic</span>
-            </div>
-            <div class="cv-personal-item">
-              <span class="cv-personal-label">Japanese</span>
-              <span class="cv-personal-value">Beginner</span>
-            </div>
-            <div class="cv-personal-item">
-              <span class="cv-personal-label">German</span>
-              <span class="cv-personal-value">Beginner</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- RIGHT -->
-      <div class="cv-right">
-  <div class="cv-section-block">
-    <h2 class="cv-section-heading">SKILLS</h2>
-    <div class="cv-skill-grid">
-      <div class="cv-skill-card">
-        <div class="cv-skill-icon"><i class="fab fa-html5"></i></div>
-        <div>
-          <p class="cv-skill-title">HTML</p>
-          <p class="cv-skill-level">Structure & content</p>
-        </div>
-      </div>
-      <div class="cv-skill-card">
-        <div class="cv-skill-icon"><i class="fab fa-css3-alt"></i></div>
-        <div>
-          <p class="cv-skill-title">CSS</p>
-          <p class="cv-skill-level">Layout & styling</p>
-        </div>
-      </div>
-      <div class="cv-skill-card">
-        <div class="cv-skill-icon"><i class="fab fa-js"></i></div>
-        <div>
-          <p class="cv-skill-title">JavaScript</p>
-          <p class="cv-skill-level">Basic interactivity</p>
-        </div>
-      </div>
-      <div class="cv-skill-card">
-        <div class="cv-skill-icon"><i class="fab fa-figma"></i></div>
-        <div>
-          <p class="cv-skill-title">Figma</p>
-          <p class="cv-skill-level">UI/UX design</p>
-        </div>
-      </div>
-      <div class="cv-skill-card">
-        <div class="cv-skill-icon cv-canva-icon"><span>C</span></div>
-        <div>
-          <p class="cv-skill-title">Canva</p>
-          <p class="cv-skill-level">Visual design</p>
-        </div>
-      </div>
+    <div class="footer-bottom">
+      <p>❀ Made with love by <strong>Callista Putri Relvian</strong></p>
     </div>
-
-    <div class="cv-soft-skills">
-      <p class="cv-soft-title">Soft Skills</p>
-      <div class="cv-soft-tags">
-        <span>Communication</span>
-        <span>Teamwork</span>
-        <span>Time Management</span>
-        <span>Creativity</span>
-        <span>Adaptability</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="cv-section-block">
-    <h2 class="cv-section-heading">PROJECTS & EXPERIENCE</h2>
-
-    <div class="cv-proj-item">
-      <div class="cv-proj-dot"></div>
-      <div>
-        <p class="cv-proj-name">2026 — WISE INNOVERA 2026 UI/UX Design Competition</p>
-        <p class="cv-proj-role">Participant — Joined the national-level UI/UX design competition WISE INNOVERA 2026.</p>
-      </div>
-    </div>
-
-    <div class="cv-proj-item">
-      <div class="cv-proj-dot"></div>
-      <div>
-        <p class="cv-proj-name">2026 — Simple Conversion Website</p>
-        <p class="cv-proj-role">Lead Developer — Built a web-based conversion tool with a responsive interface.</p>
-      </div>
-    </div>
-
-    <div class="cv-proj-item">
-      <div class="cv-proj-dot"></div>
-      <div>
-        <p class="cv-proj-name">2025 — UI/UX Design Mobile App</p>
-        <p class="cv-proj-role">Designer — Designed a mobile app interface with a strong focus on user experience.</p>
-      </div>
-    </div>
-
-    <div class="cv-proj-item">
-      <div class="cv-proj-dot"></div>
-      <div>
-        <p class="cv-proj-name">2025 — UI/UX Design Website</p>
-        <p class="cv-proj-role">Designer — Designed a modern, aesthetic, and user-friendly website interface with a focus on user experience.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="cv-section-block">
-    <h2 class="cv-section-heading">CONTACT</h2>
-    <div class="cv-contact-item">
-      <i class="fas fa-envelope"></i>
-      <a href="mailto:cacacalisstaa@gmail.com">cacacalisstaa@gmail.com</a>
-    </div>
-    <div class="cv-contact-item">
-      <i class="fas fa-phone"></i>
-      <a href="tel:+6287728901055">+6287728901055</a>
-    </div>
-  </div>
-
-  <!-- QUOTES KERTAS NOTE -->
-  <div class="cv-note">
-    <div class="cv-note-pin"></div>
-    <p class="cv-note-text">"I am still learning, still growing, and that is what makes me stronger."</p>
-    <div class="cv-note-lines">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-left">
-      <h2 class="footer-title">Not just design,<br/><span>but experience.</span></h2>
-      <p class="footer-desc">Have an idea or an exciting project? Let’s collaborate! ✨</p>
-      <a href="https://wa.me/qr/U6XMQVC6MKXED1" target="_blank" class="footer-btn">Chat on WhatsApp 💬</a>
-    </div>
-
-    <div class="footer-divider"></div>
-
-    <div class="footer-right">
-      <p class="footer-social-label">Find me on</p>
-      <div class="footer-socials">
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cacacalisstaa@gmail.com&su=Halo%20Callista" target="_blank" class="footer-social-item" title="Email">
-  <i class="fas fa-envelope"></i>
-  <span>Email</span>
-</a>
-        <a href="https://www.instagram.com/callstptrlvn?igsh=b3I4amxqbzEzMWM=" target="_blank" class="footer-social-item" title="Instagram">
-          <i class="fab fa-instagram"></i>
-          <span>Instagram</span>
-        </a>
-        <a href="https://www.tiktok.com/@caacaakss?_r=1&_t=ZS-966hUdBjFcz" target="_blank" class="footer-social-item" title="TikTok">
-          <i class="fab fa-tiktok"></i>
-          <span>TikTok</span>
-        </a>
-        <a href="https://github.com/cacacalisstaa" target="_blank" class="footer-social-item" title="GitHub">
-          <i class="fab fa-github"></i>
-          <span>GitHub</span>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>❀ Made with love by <strong>Callista Putri Relvian</strong></p>
-  </div>
-</footer>
+  </footer>
 
   <script src="script.js"></script>
 </body>
