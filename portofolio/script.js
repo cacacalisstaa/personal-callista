@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function startTypingAnimation() {
     const typingText = document.getElementById('typing-text');
     if (typingText) {
-      const fullText = "Saya Callista (Callis), siswi SMK Negeri 7 jurusan SIJA yang tertarik pada dunia teknologi, khususnya dalam membangun dan mengembangkan sistem serta website yang bermanfaat.";
+      const fullText = "I am Callista (Callis), a student at SMK Negeri 7 majoring in SIJA, with a keen interest in the world of technology—specifically in building and developing useful systems and websites.";
       let index = 0;
       const typingSpeed = 30; // ms per character
 
