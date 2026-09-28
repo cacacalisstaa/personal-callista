@@ -1929,66 +1929,22 @@ cursor: pointer;
   color: var(--pink-dark);
 }
 /* =========================
-   RESPONSIVE INTRO / PAGE 1
+   HERO MOBILE
    ========================= */
 
 @media (max-width: 600px) {
 
-  body.no-scroll {
-    overflow: hidden;
-    height: 100dvh;
-  }
-
-  .intro-overlay {
-    height: 100dvh;
-    min-height: 100dvh;
-    padding: 12px;
-    overflow: hidden;
-  }
-
-  .navbar {
-    padding: 10px 14px;
-  }
-
-  .nav-inner {
-    min-width: 0;
-    width: 100%;
-    padding: 6px 8px;
-  }
-
-  .nav-logo-icon {
-    width: 32px;
-    height: 32px;
-    font-size: 0.9rem;
-  }
-
-  .nav-links {
-    gap: 0;
-    padding: 0 4px;
-  }
-
-  .nav-links a {
-    font-size: 0.65rem;
-    padding: 5px 5px;
-  }
-
-  .nav-name {
-    font-size: 0.65rem;
-    padding: 5px 8px;
-  }
-
   .hero {
-    min-height: calc(100dvh - 70px);
-    height: calc(100dvh - 70px);
-    padding: 10px 24px 20px;
-    overflow: hidden;
-  }
-
-  .hero-left {
-    width: 100%;
+    min-height: calc(100vh - 80px);
+    padding: 15px 24px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
   }
 
   .hero-right {
+    order: -1;
     width: 100%;
   }
 
@@ -1999,19 +1955,23 @@ cursor: pointer;
     animation: none;
   }
 
+  .hero-left {
+    width: 100%;
+  }
+
   .hero-title {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     line-height: 1.05;
-    margin: 10px 0;
+    margin: 8px 0;
   }
 
   .badge {
-    font-size: 0.55rem;
+    font-size: 0.58rem;
     padding: 5px 9px;
   }
 
   .hero-desc {
-    font-size: 0.68rem;
+    font-size: 0.7rem;
     line-height: 1.45;
     margin-top: 8px;
   }
@@ -2020,16 +1980,10 @@ cursor: pointer;
     margin-top: 8px;
   }
 
-  .social-icon {
-    width: 25px;
-    height: 25px;
-    font-size: 0.7rem;
-  }
-
   #viewDetailsBtn {
     display: inline-flex;
     margin-top: 10px;
-    padding: 8px 15px;
+    padding: 9px 16px;
     font-size: 0.7rem;
   }
 }
